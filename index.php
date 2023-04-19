@@ -13,7 +13,7 @@ require 'db_connect.php';
 <body>
 	<div class="main-section">
 	<div class="flex items-center justify-center font-black m-3 mb-12">
-            <h1 class="tracking-wide text-3xl font-bold text-white dark:text-white">My ToDo List</h1>
+            <h1 class="tracking-wide text-3xl font-bold text-white dark:text-white">ToDo List</h1>
             </div>
 		<div class="add-section">
 			<form action="work/add.php" method="post" autocomplete="off">
