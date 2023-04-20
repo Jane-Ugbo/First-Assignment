@@ -17,15 +17,19 @@ require 'db_connect.php';
             </div>
 		<div class="add-section">
 			<form action="work/add.php" method="post" autocomplete="off">
-				<?php //if(isset($_GET['mess']) && $_GET['mess'] == 'error'){ ?>
+				<?php if(isset($_GET['mess']) && $_GET['mess'] == 'error'){ ?>
+					<input type="text"
+						name="title"
+						style="border-color: #ff0000"
+						placeholder="This field is required..." />
+						<button type="submit">Add &nbsp;</button>
+					
+					<?php }else{ ?>
 					<input type="text"
 						name="title"
 						placeholder="Add Todo..." />
-						<button type="submit">Add &nbsp;</button>
-					
-					<?php //} ?>
-																								
-			
+						<button type="submit">Add &nbsp;</button>														
+					<?php } ?>
 			</form>
 		</div>
 		<?php

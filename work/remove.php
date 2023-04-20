@@ -13,7 +13,7 @@ if(isset($_POST['id'])){
           echo 0;
         }
         $connect = null;
-        
+        exist();
     }
 }else {
     header("Location: ../index.php?mess=error");
